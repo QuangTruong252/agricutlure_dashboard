@@ -178,6 +178,7 @@ main {
     padding: 1rem;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     border-radius: 2px;
+    min-width: 200px;
 }
 
 .card-flex {
@@ -233,6 +234,7 @@ main {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     border-radius: 2px;
     height: 525px;
+    min-width: 350px;
 }
 
 .analytics-head {
@@ -280,6 +282,7 @@ main {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     border-radius: 2px;
     padding: 1rem 1.5rem;
+    min-width: 800px;
 }
 .history-head-flex {
     display: flex;
@@ -317,7 +320,9 @@ main {
 .tr-info span, .tr-head span{
     margin: auto;
 }
-
+.table-responsive {
+    overflow: auto;
+}
 @media only screen and (max-width: 1124px) {
     .sidebar {
         left: -100%;
@@ -338,5 +343,18 @@ main {
     }
     .cards {
         grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .cards {
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    .detail-grid {
+        grid-template-columns: 100%;
+    }
+    .page-header {
+        display: block;
     }
 }
