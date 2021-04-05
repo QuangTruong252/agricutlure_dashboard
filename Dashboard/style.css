@@ -2,7 +2,7 @@
 
 :root {
     --color-main: #1a202e;
-    --menu-head: #8da2fb;
+    --primary-color: #8da2fb;
 }
 
 * {
@@ -15,6 +15,24 @@
 
 }
 
+#sidebar-toggle {
+    display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar{
+    left: -100%;
+}
+
+#sidebar-toggle:checked ~ .main-content header{
+    left: 0;
+    width: 100%;
+    right: 0;
+}
+#sidebar-toggle:checked ~ .main-content{
+    margin-left: 0;
+}
+
+
 .sidebar {
     width: 280px;
     position: fixed;
@@ -24,6 +42,8 @@
     padding: 1rem 1.5rem;
     background-color: var(--color-main);
     color: #fff;
+    z-index: 20;
+    transition: left 500ms;
 }
 .sidebar-brand {
     height: 100px;
@@ -66,7 +86,7 @@
 }
 .menu-head {
     text-transform: uppercase;
-    color: var(--menu-head);
+    color: var(--primary-color);
     font-size: .75rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -97,6 +117,13 @@ header {
     align-items:center;
     background-color: #efefef;
     padding: 1rem 1.5rem;
+    position: fixed;
+    left: 280px;
+    width: calc(100% - 280px);
+    top: 0;
+    z-index: 20;
+    transition: margin-left 500ms;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 .menu-toggle label {
     height: 60px;
@@ -105,6 +132,7 @@ header {
     display: grid;
     place-items: center;
     border-radius: 50%;
+    
 }
 .header-icons span {
     display: inline-block;
@@ -118,15 +146,197 @@ header {
 
 .main-content {
     margin-left: 280px;
+    z-index: 20;
+    transition: margin-left 500ms;
+    
 }
 
 main {
     padding: 1.5rem;
     background: #f1f5f9;
     min-height: calc(100vh - 70px);
+    margin-top: 70px;
 }
 
 .page-header {
+    /* margin-top: 2rem; */
     display: flex;
     justify-content: space-between;
+}
+
+/* Card css */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    margin-top: 2rem;
+}
+
+.card-single {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+.card-flex {
+    /* display: flex;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+
+.card-head span {
+    display: block;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.card-head small {
+    font-size: 600;
+    color:#555;
+}
+
+.card-info h2 {
+    font-size: 2.2rem;
+    color: #333;
+}
+.card-chart span {
+    font-size: 5rem;
+}
+
+.card-chart.red span {
+    color: rgb(168, 98, 33);
+}
+.card-chart.blue span {
+    color: rgb(40, 76, 153);
+}
+.card-chart.yellow span {
+    color: rgb(11, 168, 45);
+}
+
+/* Detail css */
+/* Analytics css */
+.detail-grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-gap: 3rem;
+}
+
+.analytics-card {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    height: 525px;
+}
+
+.analytics-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.analytics-head span {
+    font-size: 1.5rem;
+}
+.analytics-chart {
+    margin-bottom: 2rem;
+}
+.chart-circle {
+    height: 200px;
+    width: 200px;
+    border: 8px solid var(--primary-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.analytics-note span {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 600;
+
+}
+
+.analytics-btn button {
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(8, 150, 168);
+    border-radius: 2px;
+    border: 0px;
+}
+/* History css */
+.history {
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding: 1rem 1.5rem;
+}
+.history-head-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.history-head-flex small{
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 2rem;
+}
+.history table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+.tr-info, .tr-head{
+    background: #fff;
+    /* margin-bottom: .5rem; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: .5rem;
+    font-size: .95rem;
+}
+
+.tr-head {
+    background-color: #8da2fb;
+    color:#222;
+    font-size: 1rem;
+}
+
+.tr-info span, .tr-head span{
+    margin: auto;
+}
+
+@media only screen and (max-width: 1124px) {
+    .sidebar {
+        left: -100%;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .main-content header {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    #sidebar-toggle:checked ~ .sidebar {
+        left: 0;
+    }
+    #sidebar-toggle:checked ~ .main-content {
+        margin-left: 280px;
+    }
+    .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
