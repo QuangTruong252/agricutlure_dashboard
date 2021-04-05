@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="sidebar">
+        <!-- User basic info -->
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <img src="./img/uit.png" width="30px" alt="user">
+                <div class="brand-icons">
+                    <span class="las la-bell"></span>
+                    <span class="las la-user-circle"></span>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="./img/user.jpg" alt="">
+                <div>
+                    <h3>Quang Truong</h3>
+                    <span>18521572@gm.uit.edu.vn</span>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="menu-head">
+                    <span>Dashboard</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="las la-tachometer-alt"></span>
+                            <span>Generality</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-chart-pie"></span>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    <span>Options</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="las la-user-alt"></span>
+                            <span>User</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-wrench"></span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="">
+                    <span class="las la-bars"></span>
+                </label>
+            </div>
+            <div class="header-icons">
+                <span class="las la-search"></span>
+                <span class="las la-bookmark"></span>
+                <span class="las la-sms"></span>
+            </div>
+        </header>
+        <main>
+            <div class="page-header">
+                <div>
+                    <h1>Agriculture Analytics Dashboard</h1>
+                    <small>Monitoring of environmental indicators in agriculture</small>    
+                </div>
+            </div>
+        </main>
+    </div>
+  </body>
 </html>

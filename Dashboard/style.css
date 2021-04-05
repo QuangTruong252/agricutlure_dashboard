@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+    --color-main: #1a202e;
+    --menu-head: #8da2fb;
+}
+
+* {
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.sidebar {
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    background-color: var(--color-main);
+    color: #fff;
+}
+.sidebar-brand {
+    height: 100px;
+}
+
+.brand-flex {
+    display: flex;
+    justify-content:space-between;
+}
+
+.brand-icons span{
+    
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.sidebar-user {
+    margin: 1rem 0rem;
+    text-align: center;
+}
+
+.sidebar-user img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #efefef;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.sidebar-user h3 {
+    font-size: 1rem;
+}
+.sidebar-user span {
+    font-size: .8rem;
+}
+.sidebar-menu {
+    margin-top: 3rem;
+
+}
+.menu-head {
+    text-transform: uppercase;
+    color: var(--menu-head);
+    font-size: .75rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.sidebar-menu ul {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-menu li {
+    margin-bottom: 0.9rem;
+}
+.sidebar-menu li a {
+    color: #efefef;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+.sidebar-menu li a span {
+    font-size: 1rem;
+    display: inline-block;
+    margin-right: .8rem;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #efefef;
+    padding: 1rem 1.5rem;
+}
+.menu-toggle label {
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+.header-icons span {
+    display: inline-block;
+    margin-left: .7rem;
+    font-size: 1.5rem;
+}
+
+.menu-toggle lable:hover {
+    background: #efefef;
+}
+
+.main-content {
+    margin-left: 280px;
+}
+
+main {
+    padding: 1.5rem;
+    background: #f1f5f9;
+    min-height: calc(100vh - 70px);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
