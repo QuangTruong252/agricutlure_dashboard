@@ -14,7 +14,9 @@
     padding: 0;
 
 }
-
+body {
+    overflow-x: hidden;
+}
 #sidebar-toggle {
     display: none;
 }
@@ -323,6 +325,8 @@ main {
 .table-responsive {
     overflow: auto;
 }
+
+/* Responsive */
 @media only screen and (max-width: 1124px) {
     .sidebar {
         left: -100%;
@@ -358,3 +362,38 @@ main {
         display: block;
     }
 }
+
+/* Analytics css */
+/* detail-chard-grid css */
+
+.detail-chard-grid {
+    display: grid;
+    grid-template-columns: 65% auto;
+    margin-top: 2rem;
+}
+.analytics-chart-head h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+.analytics-chart-head small {
+    color: #555;
+}
+
+.analytics-chart-main {
+    font-size: 15rem;
+}
+.analytics-chart-main span {
+    display: flex;
+    justify-content: center;
+    color: #8da2fb;
+}
+.status.red {
+
+}
+.status.yellow {
+    
+}
+.status.green {
+    
+}
+
