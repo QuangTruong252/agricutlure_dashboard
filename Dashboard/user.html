@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Analytics</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Generality</title>
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <input type="checkbox" id="sidebar-toggle">
     <div class="sidebar">
         <!-- User basic info -->
@@ -87,63 +87,67 @@
         <main>
             <div class="page-header">
                 <div>
-                    <h1>Agriculture Generality Dashboard</h1>
-                    <small>Monitoring of environmental indicators in agriculture</small>    
+                    <h1>Agriculture User Information</h1>
+                    <small>User information and edit information</small>    
                 </div>
             </div>
-            <div class="detail-chard-grid">
-                <div class="analytics-chart">
-                    <div class="analytics-chart-head">
-                        <h3>Temperature monitoring chart</h3>
-                        <small>Monitor the ambient temperature by cycle, shown in the chart below</small>
-                    </div>
-                    <div class="analytics-chart-main">
-                        <span class="las la-chart-area"></span>
+            <div class="user-grid">
+                <div class="sidebar-user">
+                    <img src="./img/user.jpg" alt="">
+                    <div>
+                        <h3>Quang Truong</h3>
+                        <p>18521572@gm.uit.edu.vn</p>
+                        <button>Change the picture</button>
                     </div>
                 </div>
-                <div class="history" style="min-width: auto; margin-right: 2rem;">
-                    <div class="history-head-flex">
-                        <h3>History</h3>
-                        <small>See all the history 
+                <div class="user-information">
+                    <div class="user-head user-info history-head-flex">
+                        <h3>User Information</h3>
+                        <small>Edit the user information
                             <span class="las la-arrow-right"></span>
                         </small>
-    
                     </div>
-                    <div class="table-responsive">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="tr-head">Date</div>
-                                    </td>
-                                    <td><div class="tr-head">Time</div></td>
-                                    <td><div class="tr-head"><span>Temperature</span></div></td>
-                                    <td><div class="tr-head"><span>Status</span></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="tr-info">14/3/2021</div></td>
-                                    <td><div class="tr-info">14h25m30s</div></td>
-                                    <td><div class="tr-info"><span>40C</span></div></td>
-                                    <td><div class="tr-info"><span class="status red"></span></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="tr-info">14/3/2021</div></td>
-                                    <td><div class="tr-info">14h25m30s</div></td>
-                                    <td><div class="tr-info"><span>35C</span></div></td>
-                                    <td><div class="tr-info"><span class="status yellow"></span></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="tr-info">14/3/2021</div></td>
-                                    <td><div class="tr-info">14h25m30s</div></td>
-                                    <td><div class="tr-info"><span>30C</span></div></td>
-                                    <td><div class="tr-info"><span class="status green"></span></div></td>   
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="user-main">
+                        <div class="user-component">
+                            <h4>Name</h4>
+                            <span>Tran Nguyen Quang Truong</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Email</h4>
+                            <span>18521572@gm.uit.edu.vn</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Company</h4>
+                            <span>UIT</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Number</h4>
+                            <span>0945801840</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Address</h4>
+                            <span>HCM City</span>
+                        </div>
+                    </div>
+                    <div class="user-head user-account history-head-flex">
+                        <h3>User Account</h3>
+                        <small>Edit the user account
+                            <span class="las la-arrow-right"></span>
+                        </small>
+                    </div>
+                    <div class="user-main">
+                        <div class="user-component">
+                            <h4>Username</h4>
+                            <span>quangtruonguit</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Passowrd</h4>
+                            <span>*********</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-</body>
+  </body>
 </html>
