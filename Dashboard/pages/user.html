@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Generality</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <!-- User basic info -->
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <img src="./img/uit.png" width="30px" alt="user">
+                <div class="brand-icons">
+                    <span class="las la-bell"></span>
+                    <span class="las la-user-circle"></span>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="./img/user.jpg" alt="">
+                <div>
+                    <h3>Quang Truong</h3>
+                    <p>18521572@gm.uit.edu.vn</p>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="menu-head">
+                    <span>Dashboard</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="http://127.0.0.1:5500/Dashboard/generality.html">
+                            <span class="las la-tachometer-alt"></span>
+                            <span>Generality</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/Dashboard/analytics.html">
+                            <span class="las la-chart-pie"></span>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    <span>Options</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="http://127.0.0.1:5500/Dashboard/user.html">
+                            <span class="las la-user-alt"></span>
+                            <span>User</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/Dashboard/settings.html">
+                            <span class="las la-wrench"></span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+            </div>
+            <div class="header-icons">
+                <span class="las la-search"></span>
+                <span class="las la-bookmark"></span>
+                <span class="las la-sms"></span>
+            </div>
+        </header>
+        <main>
+            <div class="page-header">
+                <div>
+                    <h1>Agriculture User Information</h1>
+                    <small>User information and edit information</small>    
+                </div>
+            </div>
+            <div class="user-grid">
+                <div class="sidebar-user">
+                    <img src="./img/user.jpg" alt="">
+                    <div>
+                        <h3>Quang Truong</h3>
+                        <p>18521572@gm.uit.edu.vn</p>
+                        <button>Change the picture</button>
+                    </div>
+                </div>
+                <div class="user-information">
+                    <div class="user-head user-info history-head-flex">
+                        <h3>User Information</h3>
+                        <small>Edit the user information
+                            <span class="las la-arrow-right"></span>
+                        </small>
+                    </div>
+                    <div class="user-main">
+                        <div class="user-component">
+                            <h4>Name</h4>
+                            <span>Tran Nguyen Quang Truong</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Email</h4>
+                            <span>18521572@gm.uit.edu.vn</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Company</h4>
+                            <span>UIT</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Number</h4>
+                            <span>0945801840</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Address</h4>
+                            <span>HCM City</span>
+                        </div>
+                    </div>
+                    <div class="user-head user-account history-head-flex">
+                        <h3>User Account</h3>
+                        <small>Edit the user account
+                            <span class="las la-arrow-right"></span>
+                        </small>
+                    </div>
+                    <div class="user-main">
+                        <div class="user-component">
+                            <h4>Username</h4>
+                            <span>quangtruonguit</span>
+                        </div>
+                        <div class="user-component">
+                            <h4>Passowrd</h4>
+                            <span>*********</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+  </body>
+</html>
