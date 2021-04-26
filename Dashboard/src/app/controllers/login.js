@@ -1,7 +1,9 @@
-
 class LoginController {
-    index(req,res) {
-        res.render('login', {layout: 'begin'});
+    index(req, res) {
+        res.render('login', { layout: 'begin' });
+    };
+    register(req, res) {
+        res.render('register', { layout: 'begin' });
     };
 };
 

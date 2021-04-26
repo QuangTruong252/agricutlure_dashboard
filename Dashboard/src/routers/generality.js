@@ -3,6 +3,7 @@ const router = express.Router();
 
 const generalityController = require('../app/controllers/generality');
 
-router.get('/',generalityController.index);
+router.get('/history', generalityController.showHistory);
+router.get('/', generalityController.index);
 
 module.exports = router;

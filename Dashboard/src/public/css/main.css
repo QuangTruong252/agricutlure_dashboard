@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css");
 :root {
   --color-main: #136e1f;
   --primary-color: #8da2fb; }
 
 * {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
@@ -88,7 +89,8 @@ form {
   font-size: 18px;
   transition: .3s; }
 
-.input-div:before, .input-div:after {
+.input-div:before,
+.input-div:after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -103,7 +105,8 @@ form {
 .input-div:after {
   left: 50%; }
 
-.input-div.focus:before, .input-div.focus:after {
+.input-div.focus:before,
+.input-div.focus:after {
   width: 50%; }
 
 .input-div.focus > div > h5 {
@@ -129,6 +132,12 @@ form {
 
 .input-div.pass {
   margin-bottom: 4px; }
+
+.have-account {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin: 10px 0px; }
 
 a {
   display: block;
@@ -445,12 +454,26 @@ main {
   display: inline-block;
   margin-left: 2rem; }
 
+.history-head-flex a:hover {
+  cursor: pointer; }
+
 .history table {
   border-collapse: collapse;
   width: 100%;
   overflow-x: auto; }
 
-.tr-info, .tr-head {
+.history-generals {
+  display: grid;
+  grid-template-columns: 60% auto; }
+
+.history-generals-head {
+  padding: 20px;
+  margin-top: 100px;
+  font-size: 30px;
+  color: #1b2fbdd6; }
+
+.tr-info,
+.tr-head {
   height: 50px;
   display: flex;
   align-items: center;
@@ -474,7 +497,8 @@ main {
 .td-info {
   background: #fff; }
 
-.tr-info p, .tr-head p {
+.tr-info p,
+.tr-head p {
   margin: auto; }
 
 .table-responsive {
