@@ -6,6 +6,12 @@ const sass = require('node-sass');
 const app = express();
 const port = 3333;
 
+// Import route
+const route = require('./routers/index');
+// Import DB
+const db = require('./config/db/index');
+// Connect to DB
+db.connectDB();
 
 app.use(express.static(path.join(__dirname,'public')));
 
@@ -20,15 +26,8 @@ app.set('views', path.join(__dirname,'resources/views'));
 
 console.log('PATH: ' + path.join(__dirname,'resources/views'));
 
-app.get('/generality', (req,res) => {
-    res.render('generality');
-});
-
-app.get('/analytics', (req,res) => {
-    res.render('analytics');
-});
-
-
+// Route
+route(app);
 
 
 app.listen(port, () => console.log('Listening at port http://localhost:'+ port));
