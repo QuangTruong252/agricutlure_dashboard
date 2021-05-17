@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 form {
-    width: auto;
+    width: 100%;
 }
 
 button:hover {

@@ -3,11 +3,10 @@ const User = require('../models/User');
 
 // @desc: update user infomation on page user
 exports.updateUserInformation = async(req,res,next) => {
-    const {username,password,fullname, email, company, number, address} = req.body;
+    const {username,fullname, email, company, number, address} = req.body;
     try {
         let updatedUserInfo = {
             username,
-            password,
             fullname,
             email,
             company,

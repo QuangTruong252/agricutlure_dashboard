@@ -1,0 +1,4 @@
+Lỗi react-scripts: Permission deny
+=> npm install react-scripts
+=> chmod +x node_modules/.bin/react-scripts
+Lỗi thiếu các dependencies như argon2, jwt,...
