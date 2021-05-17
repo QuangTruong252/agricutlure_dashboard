@@ -1,0 +1,42 @@
+
+<div class="history-generals-head">
+    <h3>The History detail</h3>
+</div>
+<div class="history-generals">
+    <div class="history-chart">
+        
+    </div>
+    <div class="history">
+        <div class="history-head-flex">
+            <h3>History</h3>
+        </div>
+        <div class="table-responsive">
+            <table>
+                <tbody>
+                    <div>
+                        <tr>
+                            <td class="td-head">
+                                <div class="tr-head">Date</div>
+                            </td>
+                            <td class="td-head"><div class="tr-head">Time</div></td>
+                            <td class="td-head"><div class="tr-head"><p>Temperature</p></div></td>
+                            <td class="td-head"><div class="tr-head"><p>Soil Moiture</p></div></td>
+                            <td class="td-head"><div class="tr-head"><p>CO2 Connectration</p></div></td>
+                        </tr>
+                    </div>
+                    <div>
+                        {{#each generals}}
+                            <tr>
+                                <td class="td-info"><div class="tr-info"><p>{{this.date}}</p></div></td>
+                                <td class="td-info"><div class="tr-info"><p>{{this.time}}</p></div></td>
+                                <td class="td-info"><div class="tr-info"><p>{{this.data.temperature.value}}</p></div></td>
+                                <td class="td-info"><div class="tr-info"><p>{{this.data.oil.value}}</p></div></td>
+                                <td class="td-info"><div class="tr-info"><p>{{this.data.co2.value}}</p></div></td>
+                            </tr>
+                        {{/each}}
+                    </div>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

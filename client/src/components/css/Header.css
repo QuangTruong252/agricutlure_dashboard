@@ -1,0 +1,36 @@
+/* Header css */
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    left: 280px;
+    width: calc(100% - 280px);
+    top: 0;
+    z-index: 20;
+    transition: margin-left 500ms;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-toggle label {
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.header-icons span {
+    display: inline-block;
+    margin-left: .7rem;
+    font-size: 1.5rem;
+}
+
+.menu-toggle lable:hover {
+    background: #efefef;
+}
