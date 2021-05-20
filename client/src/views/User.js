@@ -1,4 +1,5 @@
 import { useContext, useState, useEffect } from "react";
+import {useHistory} from "react-router-dom";
 import userimg from "../assets/user.jpg";
 import { UserContext } from "../contexts/UserContext";
 import { AuthContext } from "../contexts/AuthContext";
@@ -37,6 +38,14 @@ const User = () => {
 		const { success, message } = await updateUser(updatedUser);
 		console.log({success,message});
 	};
+
+  let history = useHistory();
+  const onClickSave = () => {
+    history.push("/user");
+    setEditAccount(false);
+    setEditUser(false);
+  };
+
 
   return (
     <main>
@@ -146,6 +155,7 @@ const User = () => {
                   type="text"
                   name="username"
                   defaultValue={username}
+                  onChange={onChangeUpdatedUser}
                 />
                 <span style={{ display: editAccount ? "none" : "block" }}>
                   {username}
@@ -163,7 +173,7 @@ const User = () => {
                 </span>
               </div>
             </div>
-            <button className="btn-save-edit" type="submit">
+            <button className="btn-save-edit" type="submit" onClick={onClickSave}>
               Save
             </button>
           </div>

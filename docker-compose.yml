@@ -1,0 +1,18 @@
+version: "2"
+services: 
+    client: 
+        image: client:v2
+        stdin_open: true
+        ports: 
+            - "3000:3000"
+        networks:
+            - mern-app
+    server:
+        image: server:v2
+        ports: 
+            - "5000:5000"
+        networks:
+            - mern-app
+networks:
+    mern-app:
+        driver: bridge

@@ -65,12 +65,12 @@ const History = (props) => {
       <div className="history">
         <div className="history-head-flex">
           <h3>History</h3>
-          <a href="/generality/history">
+          {/* <a href="/generality/history">
             <small>
               See all the history
               <span className="las la-arrow-right" />
             </small>
-          </a>
+          </a> */}
         </div>
         <div className="table-responsive">
           <table>

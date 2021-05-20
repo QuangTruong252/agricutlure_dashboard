@@ -63,12 +63,12 @@ const Sidebar = () => {
                     <span>User</span>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/settings">
                     <span className="las la-wrench" />
                     <span>Settings</span>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
