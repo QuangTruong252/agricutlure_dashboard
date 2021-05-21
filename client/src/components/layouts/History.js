@@ -62,50 +62,50 @@ const History = (props) => {
 
   return (
     <>
-      <div classNameName="history">
-        <div classNameName="history-head-flex">
+      <div className="history">
+        <div className="history-head-flex">
           <h3>History</h3>
           {/* <a href="/generality/history">
             <small>
               See all the history
-              <span classNameName="las la-arrow-right" />
+              <span className="las la-arrow-right" />
             </small>
           </a> */}
         </div>
-        <div classNameName="table-responsive">
+        <div className="table-responsive">
           <table>
             <tbody>
               <tr>
-                <td classNameName="td-head">
-                  <div classNameName="tr-head"><p>Date</p></div>
+                <td className="td-head">
+                  <div className="tr-head"><p>Date</p></div>
                 </td>
-                <td classNameName="td-head">
-                  <div classNameName="tr-head"><p>Time</p></div>
+                <td className="td-head">
+                  <div className="tr-head"><p>Time</p></div>
                 </td>
 
                 <td
                   style={{
                     display: props.history.isTemperature ? "none" : "revert",
                   }}
-                  classNameName="td-head"
+                  className="td-head"
                 >
-                  <div classNameName="tr-head">
+                  <div className="tr-head">
                     <p>Temperature</p>
                   </div>
                 </td>
                 <td
                   style={{ display: props.history.isOil ? "none" : "revert" }}
-                  classNameName="td-head"
+                  className="td-head"
                 >
-                  <div classNameName="tr-head">
+                  <div className="tr-head">
                     <p>Oil Moiture</p>
                   </div>
                 </td>
                 <td
                   style={{ display: props.history.isCo2 ? "none" : "revert" }}
-                  classNameName="td-head"
+                  className="td-head"
                 >
-                  <div classNameName="tr-head">
+                  <div className="tr-head">
                     <p>CO2 Connectration</p>
                   </div>
                 </td>
