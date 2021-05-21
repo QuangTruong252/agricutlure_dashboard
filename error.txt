@@ -3,4 +3,4 @@ Lỗi react-scripts: Permission deny
 => chmod +x node_modules/.bin/react-scripts
 Lỗi thiếu các dependencies như argon2, jwt,...
 
-IP: EC2 => 13.213.38.206
+IP: EC2 => http://3.0.92.151:3000
