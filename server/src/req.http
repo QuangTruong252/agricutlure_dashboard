@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:5000/api/generals
+GET http://13.229.105.112:5000/api/generals
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEwOTg4MDMyMzdjZDRjYzA1MjA3YzYiLCJpYXQiOjE2MjExMzc1MzZ9.Gqypep5R76M16zW5fNMIyYDA9mY_TK3sARwnPTA4aI0
 
