@@ -1,14 +1,14 @@
 version: "2"
 services: 
     client: 
-        image: quangtruong522/client-agriculture:v2
+        image: quangtruong522/client-agriculture:v3
         stdin_open: true
         ports: 
             - "3000:3000"
         networks:
             - mern-app
     server:
-        image: quangtruong522/server_agriculture:v2
+        image: quangtruong522/server_agriculture:v3
         ports: 
             - "5000:5000"
         networks:
