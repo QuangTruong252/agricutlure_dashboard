@@ -32,10 +32,10 @@ exports.createGeneral = async (req, res, next) => {
                     value: temperature,
                 },
                 humidity: {
-                    value: oil,
+                    value: humidity,
                 },
                 o2: {
-                    value: co2,
+                    value: o2,
                  },
             },
             user: req.userId,
