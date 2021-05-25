@@ -20,40 +20,40 @@ const History = (props) => {
       <>
         {generals.map((general) => (
           <tr>
-            <td className="td-info">
-              <div className="tr-info">
-                <p>{general.date}</p>
-              </div>
-            </td>
-            <td className="td-info">
-              <div className="tr-info">
-                <p>{general.time}</p>
-              </div>
-            </td>
-            <td
-              style={{ display: props.history.isTemperature ? "none" : "revert" }}
-              className="td-info"
-            >
-              <div className="tr-info">
-                <p>{general.data.temperature.value}</p>
-              </div>
-            </td>
-            <td
-              style={{ display: props.history.isOil ? "none" : "revert" }}
-              className="td-info"
-            >
-              <div className="tr-info">
-                <p>{general.data.oil.value}</p>
-              </div>
-            </td>
-            <td
-              style={{ display: props.history.isCo2 ? "none" : "revert" }}
-              className="td-info"
-            >
-              <div className="tr-info">
-                <p>{general.data.co2.value}</p>
-              </div>
-            </td>
+              <td className="td-info">
+                <div className="tr-info">
+                  <p>{general.date}</p>
+                </div>
+              </td>
+              <td className="td-info">
+                <div className="tr-info">
+                  <p>{general.time}</p>
+                </div>
+              </td>
+              <td
+                style={{ display: props.history.isTemperature ? "none" : "revert" }}
+                className="td-info"
+              >
+                <div className="tr-info">
+                  <p>{general.data.temperature.value}</p>
+                </div>
+              </td>
+              <td
+                style={{ display: props.history.isHumidity ? "none" : "revert" }}
+                className="td-info"
+              >
+                <div className="tr-info">
+                  <p>{general.data.humidity.value}</p>
+                </div>
+              </td>
+              <td
+                style={{ display: props.history.isO2 ? "none" : "revert" }}
+                className="td-info"
+              >
+                <div className="tr-info">
+                  <p>{general.data.o2.value}</p>
+                </div>
+              </td>
           </tr>
         ))}
       </>
@@ -65,15 +65,10 @@ const History = (props) => {
       <div className="history">
         <div className="history-head-flex">
           <h3>History</h3>
-          {/* <a href="/generality/history">
-            <small>
-              See all the history
-              <span className="las la-arrow-right" />
-            </small>
-          </a> */}
+          <button>Reset</button>
         </div>
         <div className="table-responsive">
-          <table>
+          <table className="table-header">
             <tbody>
               <tr>
                 <td className="td-head">
@@ -94,25 +89,30 @@ const History = (props) => {
                   </div>
                 </td>
                 <td
-                  style={{ display: props.history.isOil ? "none" : "revert" }}
+                  style={{ display: props.history.isHumidity ? "none" : "revert" }}
                   className="td-head"
                 >
                   <div className="tr-head">
-                    <p>Oil Moiture</p>
+                    <p>Humidity</p>
                   </div>
                 </td>
                 <td
-                  style={{ display: props.history.isCo2 ? "none" : "revert" }}
+                  style={{ display: props.history.isO2 ? "none" : "revert" }}
                   className="td-head"
                 >
                   <div className="tr-head">
-                    <p>CO2 Connectration</p>
+                    <p>O2</p>
                   </div>
                 </td>
               </tr>
-              {body}
             </tbody>
           </table>
+          <div className="scroll-table">
+            <table>
+              <tbody></tbody>
+              {body}
+            </table>
+          </div>
         </div>
       </div>
     </>

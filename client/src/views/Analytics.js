@@ -4,8 +4,8 @@ import History from '../components/layouts/History'
 const Analytics = () => {
   const historyStatus = {
     isTemperature: false,
-    isOil: true,
-    isCo2: true,
+    isHumidity: true,
+    isO2: true,
   };
     return (
         <main>

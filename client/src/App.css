@@ -210,7 +210,12 @@ main {
 .history table {
     border-collapse: collapse;
     width: 100%;
-    overflow-x: auto;
+    overflow: auto;
+}
+
+.history tbody {
+    height: 300px;
+    overflow: scroll;
 }
 
 .history-generals {
@@ -260,8 +265,26 @@ main {
     margin: auto;
 }
 .table-responsive {
-    overflow: auto;
+    width: 100%;
 }
+
+.table-responsive table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.scroll-table {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.table-responsive table.table-header {
+    width: calc(100% - 15px);
+}
+
+
+
+
 /* Analytics css */
 /* detail-chard-grid css */
 .detail-chard-grid {

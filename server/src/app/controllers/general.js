@@ -17,10 +17,11 @@ exports.getAllGeneral = async(req, res, next) => {
 
 exports.createGeneral = async (req, res, next) => {
     // Structure data send from edge
-    const { temperature ,oil , co2} = req.body;
+    const { temperature ,humidity , o2} = req.body;
+    console.log({ temperature ,humidity , o2});
 
     // Simple check
-    if (!temperature || !oil || !co2)
+    if (!temperature || !humidity || !o2)
     return res
         .status(400)
         .json({ success: false, message: "Data loss!!!" });
@@ -30,10 +31,10 @@ exports.createGeneral = async (req, res, next) => {
                 temperature: {
                     value: temperature,
                 },
-                oil: {
+                humidity: {
                     value: oil,
                 },
-                co2: {
+                o2: {
                     value: co2,
                  },
             },

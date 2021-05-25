@@ -14,13 +14,13 @@ const General = new Schema ({
         default: today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
     },
     data: {
-        co2: {
+        o2: {
             value: String,
         },
         temperature: {
             value: String,
         },
-        oil: {
+        humidity: {
             value: String,
         }
     },

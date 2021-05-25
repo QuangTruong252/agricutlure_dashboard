@@ -8,21 +8,21 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:5000/api/auth/login
+POST http://3.0.92.151:5000/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "virustinhyeu111",
+    "username": "QuangTruong",
     "password": "123"
 }
 
 ###
-GET http://13.229.105.112:5000/api/generals
+GET http://3.0.92.151:5000/api/generals
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEwOTg4MDMyMzdjZDRjYzA1MjA3YzYiLCJpYXQiOjE2MjExMzc1MzZ9.Gqypep5R76M16zW5fNMIyYDA9mY_TK3sARwnPTA4aI0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzQ1MjF9.UHb3db86_KyQMijrR7KJjUly97uOWHxqDtD3lhDyD44
 
 ###
-PUT http://localhost:5000/api/user/update
+PUT http://3.0.92.151:5000/api/user/update
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEwOTg4MDMyMzdjZDRjYzA1MjA3YzYiLCJpYXQiOjE2MjExMzc1MzZ9.Gqypep5R76M16zW5fNMIyYDA9mY_TK3sARwnPTA4aI0
 
@@ -35,12 +35,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEwO
 }
 
 ###
-POST http://localhost:5000/api/generals/
+POST http://3.0.92.151:5000/api/generals
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEwOTg4MDMyMzdjZDRjYzA1MjA3YzYiLCJpYXQiOjE2MjExMzc1MzZ9.Gqypep5R76M16zW5fNMIyYDA9mY_TK3sARwnPTA4aI0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzQ1MjF9.UHb3db86_KyQMijrR7KJjUly97uOWHxqDtD3lhDyD44
 
 {
     "temperature":"31",
-    "oil": "45%",
-    "co2":"100pm"
+    "humidity": "45%",
+    "o2":"100pm"
 }

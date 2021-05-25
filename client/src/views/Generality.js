@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom';
 const Generality = () => {
     const historyStatus = {
       isTemperature: false,
-      isOil: false,
-      isCo2: false,
+      isHumidity: false,
+      isO2: false,
     };
     return (
       <main>
