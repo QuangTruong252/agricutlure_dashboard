@@ -55,6 +55,7 @@ main {
 }
 
 .card-single {
+    height: 150px;
     background: #fff;
     padding: 1rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -89,21 +90,14 @@ main {
     color: #333;
 }
 
+.card-chart img {
+    height: 100px;
+}
 .card-chart span {
     font-size: 5rem;
 }
 
-.card-chart.red span {
-    color: #a86221;
-}
 
-.card-chart.blue span {
-    color: #284c99;
-}
-
-.card-chart.yellow span {
-    color: #0ba82d;
-}
 
 
 /* Detail css */
@@ -125,6 +119,7 @@ main {
     border-radius: 2px;
     height: 525px;
     min-width: 350px;
+    height: 450px;
 }
 
 .analytics-head {
@@ -214,7 +209,6 @@ main {
 }
 
 .history tbody {
-    height: 300px;
     overflow: scroll;
 }
 
@@ -279,7 +273,7 @@ main {
 }
 
 .table-responsive table.table-header {
-    width: calc(100% - 15px);
+    width: 100%;
 }
 
 
@@ -289,7 +283,6 @@ main {
 /* detail-chard-grid css */
 .detail-chard-grid {
     display: grid;
-    grid-template-columns: 65% auto;
     margin-top: 2rem;
 }
 
@@ -304,6 +297,7 @@ main {
 
 .analytics-chart-main {
     font-size: 15rem;
+    margin-top: 20px;
 }
 
 .analytics-chart-main span {
@@ -332,6 +326,36 @@ main {
     background: green;
     border-radius: 50%;
 }
+
+.info-and-predict {
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 60% auto;
+    column-gap: 40px;
+}
+.general-info-grid {
+    display: grid;
+    row-gap: 10px;
+}
+.general-info h4 {
+    color: var(--primary-color);
+}
+
+.general-info p {
+    color:#555;
+}
+
+.predict {
+    display:grid;
+    row-gap: 10px;
+}
+
+.predict .card-single {
+    border-radius: 10px;
+}
+
+
+
 /* User css */
 .user-grid {
     display: grid;

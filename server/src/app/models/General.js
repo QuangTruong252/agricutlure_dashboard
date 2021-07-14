@@ -6,15 +6,35 @@ const today = new Date(timeElapsed);
 
 const General = new Schema ({
     date: {
-        type: String, 
-        default: today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear()
+        date: {
+            type: String,
+            default: today.getDate()
+        },
+        month: {
+            type: String,
+            default: (today.getMonth()+1)
+        },
+        year: {
+            type: String,
+            default: (today.getFullYear())
+        }
     },
     time:  {
-        type: String,
-        default: today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
+        hours: {
+            type: String,
+            default: today.getHours()
+        },
+        minutes: {
+            type: String,
+            default: today.getMinutes()
+        },
+        seconds: {
+            type: String,
+            default: today.getSeconds()
+        }
     },
     data: {
-        o2: {
+        ph: {
             value: String,
         },
         temperature: {

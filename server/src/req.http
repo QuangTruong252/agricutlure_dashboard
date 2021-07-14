@@ -17,9 +17,9 @@ Content-Type: application/json
 }
 
 ###
-GET http://3.0.92.151:5000/api/generals
+GET http://localhost:5000/api/generals
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzQ1MjF9.UHb3db86_KyQMijrR7KJjUly97uOWHxqDtD3lhDyD44
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzYwMDN9.NWkhQR4VXuNNbVnkbVqjCgzU__Fiysea90Vp55QzvO4
 
 ###
 PUT http://3.0.92.151:5000/api/user/update
@@ -35,12 +35,27 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEwO
 }
 
 ###
-POST http://3.0.92.151:5000/api/generals
+POST http://localhost:5000/api/generals
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzQ1MjF9.UHb3db86_KyQMijrR7KJjUly97uOWHxqDtD3lhDyD44
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzYwMDN9.NWkhQR4VXuNNbVnkbVqjCgzU__Fiysea90Vp55QzvO4
 
 {
-    "temperature":"31",
-    "humidity": "45%",
-    "o2":"100pm"
+    "temperature":"40",
+    "humidity": "67",
+    "ph":"6.24"
 }
+###
+POST http://localhost:5000/api/predict
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzYwMDN9.NWkhQR4VXuNNbVnkbVqjCgzU__Fiysea90Vp55QzvO4
+
+{
+    "crop_recomentation": "rice",
+    "time_forecast": 47.94970007254362,
+    "regresstion": 62.49055201320492
+}
+
+###
+GET http://localhost:5000/api/predict
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzYwMDN9.NWkhQR4VXuNNbVnkbVqjCgzU__Fiysea90Vp55QzvO4

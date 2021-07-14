@@ -4,7 +4,8 @@ export const generalReducer = (state,actions) => {
         case "GENERALS_LOADED_SUCCESS":
             return {
                 ...state,
-                generals: payload,
+                generals: payload.generals,
+                averages: payload.averages,
                 isLoading: false
             }
         default:
