@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://3.0.92.151:5000/api/auth/login
+POST http://0.0.0.0:5000/api/auth/login
 Content-Type: application/json
 
 {

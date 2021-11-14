@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-const URL = 'mongodb+srv://quangtruonguit:anhvip252@agriculturedb.ldujx.mongodb.net/agriculture_db?retryWrites=true&w=majority';
+const URL = 'mongodb+srv://quangtruonguit:oum7i43HA3V1oJ0B@agriculturedb.ldujx.mongodb.net/agriculture_db?retryWrites=true&w=majority';
 async function connectDB() {
 
     try {
