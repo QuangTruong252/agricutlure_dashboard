@@ -1,0 +1,61 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"QuangTruong",
+    "email": "email",
+    "password":"123"
+}
+
+###
+POST http://0.0.0.0:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "QuangTruong",
+    "password": "123"
+}
+
+###
+GET http://localhost:5000/api/generals
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzYwMDN9.NWkhQR4VXuNNbVnkbVqjCgzU__Fiysea90Vp55QzvO4
+
+###
+PUT http://3.0.92.151:5000/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEwOTg4MDMyMzdjZDRjYzA1MjA3YzYiLCJpYXQiOjE2MjExMzc1MzZ9.Gqypep5R76M16zW5fNMIyYDA9mY_TK3sARwnPTA4aI0
+
+{
+    "address": "Đường số 16, phường Long Thạnh Mỹ, Q9, HCM",
+    "fullname": "Trần Nguyễn Quang Trường",
+    "email": "karikbeau@gmail.com",
+    "company": "Đại học CNTT UIT",
+    "number": "0945801840",
+}
+
+###
+POST http://localhost:5000/api/generals
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzYwMDN9.NWkhQR4VXuNNbVnkbVqjCgzU__Fiysea90Vp55QzvO4
+
+{
+    "temperature":"40",
+    "humidity": "67",
+    "ph":"6.24"
+}
+###
+POST http://localhost:5000/api/predict
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzYwMDN9.NWkhQR4VXuNNbVnkbVqjCgzU__Fiysea90Vp55QzvO4
+
+{
+    "crop_recomentation": "rice",
+    "time_forecast": 47.94970007254362,
+    "regresstion": 62.49055201320492
+}
+
+###
+GET http://localhost:5000/api/predict
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGEyNzFiMjZkZTgzNzY1ZTg5MmJhMjciLCJpYXQiOjE2MjE5MzYwMDN9.NWkhQR4VXuNNbVnkbVqjCgzU__Fiysea90Vp55QzvO4
